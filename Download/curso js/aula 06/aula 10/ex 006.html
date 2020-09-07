@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6t</title>
+    <style>
+        div#area {
+            font: 20pt Arial write;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id='area'>// onclick = clicar() onmouseenter = entrar() onmouseout = sair()> cometario
+        interja
+    </div>
+    <script>
+        var area = window.document.getElementById('area')
+        area.addEventListener('click',clicar)
+        area.addEventListener('mouseenter',entrar)
+        area.addEventListener('mouseout',sair)
+        function clicar() {
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou'
+        }
+        function sair() {
+            area.innerText = 'Saiu'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

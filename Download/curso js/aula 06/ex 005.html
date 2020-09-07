@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prox 9</title>
+    <style>
+        body {
+            background: rgb(19, 43, 179);
+            color:white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Dom</h1>
+    <p>Aqui vai um resultado</p>
+    <div id="msg">Clique em mim...</div>
+    <p>Aprendendo a usar <strong>Dom</strong> em javascript</p>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //window.document.write('Estea escrito assim ' + p1.innerText)
+        //corpo.style.background = 'black'
+        //p1.style.color = 'red'
+        //window.alert(p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+    </script>
+</html>
