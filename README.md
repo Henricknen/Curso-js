@@ -1,2 +1,2 @@
-# Curdo js
+# Curso js
  Exercicios de javascript
